@@ -1,4 +1,4 @@
-# grupo5N_portifolio
+# 5N_Cubismo_Portifolio
 # Projeto
 
 Este Projeto foi criado para acompanhamento dos alunos da materia de Projeto em Design: Digital
