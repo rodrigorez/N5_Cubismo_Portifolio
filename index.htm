@@ -105,7 +105,8 @@ font-family: "vandertak-regular", sans-serif;
   	bottom: 20px;
   }
   
-.trab {
+h1.trab {
+	margin-top: 20px;
 	text-align: center;
     font-family: "sincopa", sans-serif;
     color: white;
@@ -117,12 +118,15 @@ font-family: "vandertak-regular", sans-serif;
 
 
 .container {
+	display: grid;
   position: relative;
-  width: 50%;
+  width: 100%;
   margin-left: auto;
+  margin-right: auto;
 }
 
 .image {
+display: block;
   width: 100%;
   height: auto;
   margin-left: auto;
@@ -143,12 +147,12 @@ font-family: "vandertak-regular", sans-serif;
 }
 
 .container:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -156,6 +160,15 @@ font-family: "vandertak-regular", sans-serif;
   -ms-transform: translate(-50%, -50%);
 }
   
+  .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+
   	/* link para fontes */          
 
 </style>
@@ -172,7 +185,6 @@ font-family: "vandertak-regular", sans-serif;
 </div>
 
 
-<div>
 <div class= "header">
 	<!-- html base para barra de navegação-->
 <ul>
@@ -181,7 +193,6 @@ font-family: "vandertak-regular", sans-serif;
       <li><a href="#trabalho">Trabalhos</a></li>
       <li><a href="#">Contato</a></li>
     </ul>
-</div>
 </div>
 
 
@@ -228,30 +239,45 @@ Trabalhos
 </h1>
 
 
-<div class="container">
-	<img src="https://i.postimg.cc/FKGpZrHm/2a1f297123869a227620f1f8509cc0ba.jpg" alt="image host" class="image">
+
+<div class="grid-container">
+  <div><div class="container">
+  <img src="https://thumbs2.imgbox.com/12/8b/k7jzPSBB_t.jpg" alt="Avatar" class="image">
   <div class="overlay">
-    <div class="text">hjfdshfdshkjfbskjdbhffksdbkfhdskhfks</div>
+    <div class="text">Hello World</div>
   </div>
-</div>
-
-<div class="container">
-	<img src="https://thumbs2.imgbox.com/04/ba/59w1vXnj_t.jpg" alt="image host" class="image">
+</div></div>
+  <div><div class="container">
+  <img src="https://thumbs2.imgbox.com/04/ba/59w1vXnj_t.jpg" alt="Avatar" class="image">
   <div class="overlay">
-    <div class="text">hjfdshfdshkjfbskjdbhffksdbkfhdskhfks</div>
+    <div class="text">Hello World</div>
   </div>
-</div>
+</div></div>
+  <div><div class="container">
+  <img src="https://thumbs2.imgbox.com/eb/aa/pOBp5pTM_t.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div></div>  
+  <div><div class="container">
+  <img src="https://thumbs2.imgbox.com/45/ef/aCnDj6ne_t.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div></div>
+  <div><div class="container">
+  <img src="https://thumbs2.imgbox.com/8d/1e/fXYexwj0_t.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div></div>
+  <div><div class="container">
+  <img src="https://thumbs2.imgbox.com/ff/e8/15aUMn8K_t.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div></div>
 
-<div class="gallery">
-  <a target="_blank" href="img_lights.jpg">
-    <img src="https://thumbs2.imgbox.com/12/8b/k7jzPSBB_t.jpg" alt="image host"/>
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-
-<div class="gallery">
-    <img src="https://thumbs2.imgbox.com/76/b1/TWVyubzc_t.jpg" alt="image host"/>
-  <div class="desc">Add a description of the image here</div>
 </div>
 
 </div>
