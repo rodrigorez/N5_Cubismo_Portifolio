@@ -114,12 +114,46 @@ font-family: "vandertak-regular", sans-serif;
     border: 2px;
 }  
 
-.poimage {
+
+
+.container {
+  position: relative;
+  width: 50%;
   display: block;
-  width: 40%;
+}
+
+.image {
+  display: block;
+  width: 100%;
   height: auto;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: gray;
+}
+
+.container:hover .overlay {
+  opacity: 0.5;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
   
   	/* link para fontes */          
 
@@ -192,12 +226,11 @@ Trabalhos
 
 </h1>
 
-
-<div class="gallery">
-  <a target="_blank" href="img_5terre.jpg">
-    <img src="https://thumbs2.imgbox.com/e1/54/OXpepngU_t.jpg" alt="image host"/>
-  </a>
-  <div class="desc">Add a description of the image here</div>
+<div class="container">
+  <img src="https://i.postimg.cc/FKGpZrHm/2a1f297123869a227620f1f8509cc0ba.jpg" alt="image host" class="image">
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
 </div>
 
 <div class="gallery">
@@ -215,7 +248,6 @@ Trabalhos
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="img_mountains.jpg">
     <img src="https://thumbs2.imgbox.com/76/b1/TWVyubzc_t.jpg" alt="image host"/>
   <div class="desc">Add a description of the image here</div>
 </div>
